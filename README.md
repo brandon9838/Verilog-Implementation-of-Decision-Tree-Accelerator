@@ -13,4 +13,4 @@ In the hardware/RTL folder, excecute
 ```
 ncverilog +notimingchecks tb_v3.v DEC.v sram_512x8.vp sram_256x8.vp +access+r
 ```
-For synthesis and P&R, some of the required files are provided by TSMC/synopsys. I have no right to distribute them publicly. Therefore only the files for RTL simulation are provided. For details about synthesis and P&R, please refer to DecisionTreeAccelerator.pdf.
+For synthesis and P&R, some of the required files are provided by TSMC/Synopsys. I have no right to distribute them publicly. Therefore only the files for RTL simulation are provided. For details about synthesis and P&R, please refer to DecisionTreeAccelerator.pdf.
