@@ -1,6 +1,6 @@
 # Verilog-Implementation-of-Decision-Tree-Accelerator
 ## Introduction
-This repository contains a verilog implementation of decision tree accelerator. The dataset used to train the decision tree is from this [repository](https://github.com/Shayan-Asgari/ClassificationTrees). Compared with the baseline implementation, the inference time of the accelerator is ~37 times shorter (Check out DecisionTreeAccelerator.pdf for more details).  
+This repository contains a verilog implementation of decision tree accelerator. The dataset used to train the decision tree is from this [repository](https://github.com/Shayan-Asgari/ClassificationTrees). Compared with the baseline implementation, the accelerator is ~37 times faster (Check out DecisionTreeAccelerator.pdf for more details).  
 ## Usage
 ### Software
 Make sure that you have all the dependency installed, including numpy, scikit-learn, pandas, and matplotlib. In the software folder, simply execute  
