@@ -211,15 +211,6 @@ always@(*)begin
 	
 end
 
-/*
-All the pain and suffering overwhelm the pitiful joy left
-Considering the efforts we've contributed and how little difference we could make over the past 7 years,
-I couldn't see how things will get better in the forseeable future
-To this end,
-life isn't something enjoyable, but merely a meaningless torture 
-It's about time, perhaps.
-*/
-
 always@(posedge clk or negedge rst_n)begin
 	if (!rst_n)begin
 		for(i=0;i<NUM_FEATURE;i=i+1)begin
