@@ -190,6 +190,7 @@ always@(*)begin
 	if((&input_mode_s1_r) && !(|node_s1_r[7:1]))begin
 		out_valid_s2_w=1;
 		out_s2_w=node_s1_r[0];
+		input_ID_s2_w=0;
 	end
 	
 	input_ready_s2_w=((&input_mode_s1_r) && (|node_s1_r[7:1]))?0:1;
