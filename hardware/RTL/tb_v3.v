@@ -182,7 +182,7 @@ module tb;
 					input_data_5 = data_mem[input_count*8+5];
 					input_data_6 = data_mem[input_count*8+6];
 					input_data_7 = data_mem[input_count*8+7];
-					input_ID=input_count;
+					input_ID=input_count+1;
 					
 					if (input_count==`NUM_DATA-1)begin
 						input_mode=3;
@@ -208,8 +208,8 @@ module tb;
                     $finish;
                 end
 
-                out_mem[out_ID] = out;
-                if (out!=ans_mem[out_ID])begin
+                out_mem[out_ID-1] = out;
+                if (out!=ans_mem[out_ID-1])begin
 					$display("Wrong output!");
 					$display("Answer %d is %d", out_count, ans_mem[out_count]);
 					$display("Output is %d", out);
