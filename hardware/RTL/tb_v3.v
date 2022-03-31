@@ -215,7 +215,7 @@ module tb;
 					$display("Output is %d", out);
 					$finish;
 				end
-				
+				//$display(out_ID,out,ans_mem[out_ID-1]);
                 if (out_count==`NUM_DATA-1) begin
                     you_pass_image;
 					$finish;
