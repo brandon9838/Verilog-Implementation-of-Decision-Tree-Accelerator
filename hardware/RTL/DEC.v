@@ -173,6 +173,9 @@ always@(*)begin
 		end
 	end
 	else begin 
+		if(!input_data_valid && input_ready_s3_r)begin
+			input_ID_s1_w=0;
+		end
 		fea_idx_sram_a_w=child_sram_q;
 		node_s1_w=child_sram_q;
 	end
